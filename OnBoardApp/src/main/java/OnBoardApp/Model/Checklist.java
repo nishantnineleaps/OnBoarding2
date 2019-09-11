@@ -14,10 +14,10 @@ public class Checklist {
     private String new_item;
     private String status;
     private boolean enable_attach;
-    @Lob
-    private Blob attachment;
-    @Lob
-    private Blob file_attach;
+
+    private String attachment;
+
+    private String file_attach;
     private String item_value;
     private boolean is_checked;
     private boolean soft_delete;
@@ -57,19 +57,19 @@ public class Checklist {
         this.enable_attach = enable_attach;
     }
 
-    public Blob getAttachment() {
+    public String getAttachment() {
         return attachment;
     }
 
-    public void setAttachment(Blob attachment) {
+    public void setAttachment(String attachment) {
         this.attachment = attachment;
     }
 
-    public Blob getFile_attach() {
+    public String getFile_attach() {
         return file_attach;
     }
 
-    public void setFile_attach(Blob file_attach) {
+    public void setFile_attach(String file_attach) {
         this.file_attach = file_attach;
     }
 

@@ -13,8 +13,7 @@ public class UserCheckData {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private boolean enable_attach;
-    @Lob
-    private Blob attachment;
+     private String attachment;
     private boolean soft_delete;
     private boolean is_checked;
     private Date issued_at;
@@ -41,11 +40,11 @@ public class UserCheckData {
         this.enable_attach = enable_attach;
     }
 
-    public Blob getAttachment() {
+    public String getAttachment() {
         return attachment;
     }
 
-    public void setAttachment(Blob attachment) {
+    public void setAttachment(String attachment) {
         this.attachment = attachment;
     }
 
