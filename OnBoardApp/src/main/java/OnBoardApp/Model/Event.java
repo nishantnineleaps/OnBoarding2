@@ -1,7 +1,9 @@
 package OnBoardApp.Model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 
 @Entity
@@ -11,6 +13,7 @@ public class Event {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long event_id;
     private String event_name;
+    private String event_description;
     private Date Doj;
 
 
@@ -28,6 +31,14 @@ public class Event {
 
     public void setEvent_name(String event_name) {
         this.event_name = event_name;
+    }
+
+    public String getEvent_description() {
+        return event_description;
+    }
+
+    public void setEvent_description(String event_description) {
+        this.event_description = event_description;
     }
 
     public Date getDoj() {

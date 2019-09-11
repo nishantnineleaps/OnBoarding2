@@ -3,10 +3,9 @@ package OnBoardApp.Controller;
 import OnBoardApp.Model.UserCheckData;
 import OnBoardApp.Service.UserCheckDataService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.HashMap;
 
 @RestController
 @RequestMapping("/data")
@@ -20,5 +19,9 @@ public class UserCheckDataController {
     public String save_data(@RequestBody UserCheckData userCheckData){
         userCheckDataService.save_data(userCheckData);
         return "Saved";
+    }
+    @GetMapping("/profile")
+    public HashMap profiles(){
+        return userCheckDataService.ProfileComplete();
     }
 }

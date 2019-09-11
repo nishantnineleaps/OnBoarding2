@@ -1,24 +1,27 @@
 package OnBoardApp.Model;
 
 import javax.persistence.*;
+import java.io.Serializable;
+import java.util.List;
 
 @Entity
 @Table(name="Users")
-public class Users {
+public class Users implements Serializable {
     @Id
     private String Phone;
     private String Name;
     private Long id;
     private String Gender;
     private String Designation;
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="event_id",referencedColumnName = "event_id")
-    private Event event;
+    @ManyToOne(fetch = FetchType.LAZY,cascade = CascadeType.ALL)
+    @JoinColumn(name="event_name",referencedColumnName = "event_name")
+    private Event event_name;
+
     private String Address;
     private String Otp;
     private String Otp_Expiry;
-    private boolean Soft_Delete;
-    private boolean Profile_Complete;
+    private boolean Soft_Delete=false;
+    private boolean Profile_Complete=false;
 
     public Long getId() {
         return id;
@@ -62,13 +65,6 @@ public class Users {
     }
 
 
-    public Event getEvent() {
-        return event;
-    }
-
-    public void setEvent(Event event) {
-        this.event = event;
-    }
 
     public String getAddress() {
         return Address;
@@ -108,5 +104,30 @@ public class Users {
 
     public void setProfile_Complete(boolean profile_Complete) {
         Profile_Complete = profile_Complete;
+    }
+
+    public Event getEvent_name() {
+        return event_name;
+    }
+
+    public void setEvent_name(Event event_name) {
+        this.event_name = event_name;
+    }
+
+    @Override
+    public String toString() {
+        return "Users{" +
+                "Phone='" + Phone + '\'' +
+                ", Name='" + Name + '\'' +
+                ", id=" + id +
+                ", Gender='" + Gender + '\'' +
+                ", Designation='" + Designation + '\'' +
+                ", event_name=" + event_name +
+                ", Address='" + Address + '\'' +
+                ", Otp='" + Otp + '\'' +
+                ", Otp_Expiry='" + Otp_Expiry + '\'' +
+                ", Soft_Delete=" + Soft_Delete +
+                ", Profile_Complete=" + Profile_Complete +
+                '}';
     }
 }

@@ -13,6 +13,7 @@ public class UserCheckData {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private boolean enable_attach;
+    private String status;
      private String attachment;
     private boolean soft_delete;
     private boolean is_checked;
@@ -94,5 +95,13 @@ public class UserCheckData {
 
     public void setItems(Item items) {
         this.items = items;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }
