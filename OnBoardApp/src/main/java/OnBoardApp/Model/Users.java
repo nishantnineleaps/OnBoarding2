@@ -6,22 +6,19 @@ import javax.persistence.*;
 @Table(name="Users")
 public class Users {
     @Id
-
     private String Phone;
-     private String Name;
+    private String Name;
     private Long id;
-
-     private String Gender;
-     private String Designation;
+    private String Gender;
+    private String Designation;
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="Batch_id")
-    private Batch batch;
-
-     private String Address;
-     private String Otp;
-     private String Otp_Expiry;
-     private boolean Soft_Delete;
-     private boolean Profile_Complete;
+    @JoinColumn(name="event_id",referencedColumnName = "event_id")
+    private Event event;
+    private String Address;
+    private String Otp;
+    private String Otp_Expiry;
+    private boolean Soft_Delete;
+    private boolean Profile_Complete;
 
     public Long getId() {
         return id;
@@ -65,12 +62,12 @@ public class Users {
     }
 
 
-    public Batch getBatch() {
-        return batch;
+    public Event getEvent() {
+        return event;
     }
 
-    public void setBatch(Batch batch) {
-        this.batch = batch;
+    public void setEvent(Event event) {
+        this.event = event;
     }
 
     public String getAddress() {

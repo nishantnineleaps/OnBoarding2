@@ -1,8 +1,7 @@
 package OnBoardApp.Controller;
 
-import OnBoardApp.Model.Users;
-import OnBoardApp.Repository.UsersRepository;
-import OnBoardApp.Service.UsersService;
+import OnBoardApp.Model.Item;
+import OnBoardApp.Service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -10,17 +9,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/item")
 
-public class UsersController {
+public class ItemController {
 
     @Autowired
-    UsersService usersService;
+    ItemService itemService;
 
     @PostMapping("/save")
-    public String save_user(@RequestBody Users users){
-        usersService.save_user(users);
+    public String save_item(@RequestBody Item item){
+        itemService.save_item(item);
         return "Saved";
-
     }
 }

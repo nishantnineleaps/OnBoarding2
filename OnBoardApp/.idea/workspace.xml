@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21bc3041-871a-46a4-9865-2e19781d26ae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OnBoardApp.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/OnBoardApp/Model/Checklist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OnBoardApp/Model/Checklist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/OnBoardApp/Model/UserCheckData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OnBoardApp/Model/UserCheckData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OnBoardApp/Controller/BatchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OnBoardApp/Controller/EventController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OnBoardApp/Controller/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OnBoardApp/Controller/UsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OnBoardApp/Model/Batch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OnBoardApp/Model/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OnBoardApp/Model/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OnBoardApp/Model/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/OnBoardApp/Repository/BatchRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/OnBoardApp/Repository/EventRepository.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +62,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.OnBoardApplication (1)">
-    <configuration name="OnBoardApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="OnBoardApplication (1)" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="OnBoardApp.OnBoardApplication" />
       <module name="OnBoardApp" />
       <extension name="coverage">
@@ -97,7 +98,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.OnBoardApplication (1)" />
-        <item itemvalue="Application.OnBoardApplication (1)" />
         <item itemvalue="Application.OnBoardApplication" />
       </list>
     </recent_temporary>
@@ -120,7 +120,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
