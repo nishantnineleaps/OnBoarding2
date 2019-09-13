@@ -1,0 +1,44 @@
+[
+{
+        "item_id": 1,
+        "items": "Laptop",
+        "status": "private",
+        "enable_attach": false,
+        "file_attach": ""
+    },
+    {
+        "item_id": 2,
+        "items": "Aadhar Card",
+        "status": "public",
+        "enable_attach": true,
+        "file_attach": "file1"
+    },
+    {
+        "item_id": 3,
+        "items": "Pan Card",
+        "status": "public",
+        "enable_attach": true,
+        "file_attach": "file2"
+    },
+    {
+        "item_id": 4,
+        "items": "Welcome Kit",
+        "status": "private",
+        "enable_attach": false,
+        "file_attach": ""
+    },
+    {
+        "item_id": 5,
+        "items": "EVF",
+        "status": "public",
+        "enable_attach": true,
+        "file_attach": "file3"
+    },
+    {
+        "item_id": 6,
+        "items": "Coffee Cups",
+        "status": "private",
+        "enable_attach": false,
+        "file_attach": ""
+    }
+    ]
